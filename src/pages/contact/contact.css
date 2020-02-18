@@ -1,0 +1,44 @@
+header
+{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Universal */
+.center-img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+/* id's */
+#about-me
+{
+    margin-top: 1rem;
+    font-size:  24px;
+}
+
+/* Left Column */
+.left-col
+{
+    margin-left: 1rem;
+}
+
+/* right Column */
+.center-col
+{
+    margin-left: 1rem;
+}
+.center-col h2
+{
+    text-align: center;
+}
+
+.center-col img
+{
+    margin-top: 1rem;
+    max-width: 300px;
+}
+

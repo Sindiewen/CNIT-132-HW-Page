@@ -1,0 +1,109 @@
+<!-- 
+    Rachel Vancleave
+    CNIT 132 Mini Project 1: Homepage and Assignments Page 
+    Date Created: 2/17/20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head -->
+    <head>
+        <title>Homerwork 1</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Homework 1 Page">
+
+
+        <!-- Importing stuff -->
+        <!-- My Stylesheet -->
+        <link rel="stylesheet" href="homework1.css">
+
+        <!-- bootstrap local -->
+        <link rel="stylesheet" href="../../includes/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+        <script src="../../includes/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap Crossorigin -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <!-- Following JS is optional -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    </head>
+
+    <!-- Body: Where all the content goes -->
+    <body>
+        <!-- Header -->
+        <header class="border-bottom">
+            <h1 id="top">Rachel Vancleave - CNIT 132</h1>
+        </header>
+                    
+        <section id="body-upper" class="row">
+            <!-- Left Column -->
+            <div class="col-md-3 border-right left-col">
+                <h2>Links!</h2>
+                <ul>
+                    <li><a href="./homework1.html">Homepage</a></li>
+                    <li><a href="./src/pages/assignments/assignments.html">Assignments</a></li>
+                    <li><a href="./src/pages/meetup/meetup.html">Meetup Report</a></li>
+                    <li><a href="./src/pages/contact/contact.html">Contect</a></li>
+                    <li><a href="https://hills.ccsf.edu/~rvanclea/cnit133/index.html" target="_blank">CNIT 132 Homework Page</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Column -->
+            <div class="col-md-8 center-col">
+                <h2>Welcome to my webpage for CNIT 132! Here's a picture of me and one of my bunnies Cecily!</h2>
+                <img class="center-img" alt="Picture of me and Cecily" src="./src/assets/images/cecilyandme.jpg"/>
+
+                <p id="about-me">
+                    My name is Rachel Vancleave, and I have many titles that identify who I am!<br>
+                    I'm a full time Computer Science Student at CCSF, A part time Computer science tutor, and I'm a part time indiependent video game developer for
+                    my own studio The Starfold Project. My ultimate goal is to be a software engineer at a video game studio, become extremely proficient in graphics
+                    programming, and to get into the world of low level programming with microcontrollers and what not.
+                    Eventually in the far future, teach computer science. I love bunnies, and I have 2 bunnies at home!
+                    <br>
+                    <br>
+                    While web development is absolutely important for the future, it's not the path I wish to take ultimately. My future lies in low level
+                    programming as I find that engaging. But why am I in this class and in the 133 class? Because it's a skill that is very useful! At some point
+                    i'll need a website as a portfolio. <a href="https://sindiewen.github.io/" target="_blank">I do have my own website, linked here</a>, but it was
+                    made using a open source markdown blog creater thing that I'm not a big fan of. So ultimately I want to be able to build my own site(s)
+                    without need of any external site creators, and probably my own studio's website at some point.<br>
+                    One of my favorite website's on the web is the very popular image board <a href="http://www.reddit.com/" target="_blank">Reddit</a>. A site where just about 
+                    anything has it's own community and you can join smaller 'sub reddits' to discuss various topics. Such as Game development, software engineering, web development,
+                    video games, music, 3D printing, etc... It kind of just goes on an on to just about any topic you can think of.
+                    <br>
+                    <br>
+                    One of the best resources we all have as students is the <a href="http://www.ccsf.edu/en/student-services/student-counseling.html#subcontent" target="_blank">The Student Counseling page</a>
+                    that's avaliable on campus. I reccomend any student who needs a guiding hand to figure out where to go next in their scholastic journey. They're also great people if you
+                    need someone to talk to.
+                </p>
+                <br>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="body-lower" class="row">
+            <div class="col-md-8 left-col">
+                <h2>Good Links for any Software Developer!</h2>
+                <ul>
+                    <li><a href="https://www.google.com/">Google - Everything is a search away! A perfect resource for any engineer</a></li>
+                    <li><a href="https://stackoverflow.com/">Stackoverflow - Questions and Answers board! If you have a question, check here, it might have been answered already!</a></li>
+                    <li><a href="https://github.com/">Github - Version control is basically mandatory these days! Learn Git and easily collaborate on projects! As well as check out other projects!</a></li>
+                    <li><a href="http://www.reddit.com/">Reddit - There's a subreddit for everything! Find a great community and learn about your topic of choice!</a><br>
+                        Some of my favorite subreddits:
+                        <ul>
+                            <li><a href="https://www.reddit.com/r/ProgrammerHumor/">r/ProgrammerHumor - Great programming memes</a></li>
+                            <li><a href="https://www.reddit.com/r/softwaregore/">r/softwaregore - watch programs just have an issue</a></li>
+                            <li><a href="https://www.reddit.com/r/badcode/">r/badcode - learn by not following these examples</a></li>
+                            <li><a href="https://www.reddit.com/r/SoftwareEngineering/">r/SoftwareEngineering - A general subreddit for the world of software</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://twitter.com/">Twitter - Basically invaluable for any developer for connecting with anyone in the software industry</a></li>
+                </ul>
+            </div>
+            
+        </section>
+
+
+</html>
