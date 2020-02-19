@@ -1,3 +1,8 @@
+html *
+{
+    color: black;
+}
+
 header
 {
     background-color: #e6e6fa;
@@ -9,20 +14,20 @@ header
 #about-me
 {
     margin-top: 1rem;
-    font-size:  24px;
+    font-size:  1.5em;
 }
 
 #body-upper
 {
     padding-top: 2rem;
     background-color: #ffb6c1;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,182,193,0.6361044662005427) 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,182,193,0.4) 50%, rgba(255,255,255,1) 100%);
 }
 
 #body-lower
 {
     background-color: #add8e6;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(173,216,230,1) 50%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(173,216,230,0.4) 50%);
 }
 
 
