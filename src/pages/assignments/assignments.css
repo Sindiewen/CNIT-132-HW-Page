@@ -1,1 +1,7 @@
-@import "../../../homework1.css"
+@import "../../../homework1.css";
+
+.boldLink
+{
+    font-size: 1em;
+    font-weight: 450
+}

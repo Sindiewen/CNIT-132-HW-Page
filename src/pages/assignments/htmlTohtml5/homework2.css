@@ -1,0 +1,94 @@
+/* Sets color of whole page */
+html
+{
+    background-color: yellow;
+}
+
+/* Coloring the links to red */
+a:link
+{
+    color: red;
+}
+
+a:visited
+{
+    color: blue;
+}
+
+/* Tag styles */
+
+h1
+{
+    color: red;
+    text-align: center;
+}
+
+h2
+{
+    text-align: right;
+    color: blue;
+    font-style: italic;
+}
+
+h3
+{
+    color: red;
+    text-align: right;
+}
+
+table
+{
+    background-color: cyan;
+    padding: 10px;
+    border-spacing: 15px;
+}
+
+td
+{
+    text-align: center;
+}
+
+
+/* Classes */
+.firstCharItalBig
+{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.redTextParagraphText
+{
+    color: red;
+}
+
+.font30px
+{
+    font-size: 48px;
+}
+
+/* Animations */
+
+.tableAnim
+{
+    animation-name: fullTableAnim;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+    animation-iteration-count: 1;
+    /* animation-direction: alternate; */
+    animation-play-state: running;
+}
+
+@keyframes fullTableAnim
+{
+    from {
+        background-color: cyan;
+        color: black;
+    }
+    to {
+        background-color: green;
+        color: white;
+    }
+}
