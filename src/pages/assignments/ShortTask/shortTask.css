@@ -1,0 +1,70 @@
+/* @import "../../../../homework1.css"; */
+
+/* Grid layout for the 2 column + header and footer layout */
+
+/* Creating references to what classes are what to the grid */
+.gridHeader { grid-area: header; }
+.gridMenu { grid-area: menu; }
+.gridMain { grid-area: main; }
+.gridFooter { grid-area: footer; }
+
+/* The base layout for the grid */
+.gridLayout
+{
+    /* CSS Variable declarations for the grid*/
+    --grid-Ends-BG-Color: lightblue;
+    --grid-Body-BG-Color: white;
+    --grid-Ends-Font-Color: blue;
+    --grid-Body-Font-Color: maroon;
+
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+    min-width: 860px;
+}
+
+/* Layout to anything that are immediate children to gridLayout */
+.gridLayout > div
+{
+    padding: 20px;
+}
+
+.gridLayout > .gridEnds
+{
+    color: var(--grid-Ends-Font-Color);
+    background-color: var(--grid-Ends-BG-Color); /* Default background color */
+}
+
+.gridLayout > .gridBody
+{
+    color: var(--grid-Body-Font-Color);
+    background-color: var(--grid-Body-BG-Color);
+}
+
+.gridLayout > .gridHeader
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.gridLayout > .gridMenu > ul
+{
+    list-style: none;
+}
+
+.gridLayout > .gridMenu
+{
+    width: 200px;
+}
+
+
+
+
+
+
+
+
