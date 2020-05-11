@@ -1,0 +1,134 @@
+
+/* Page Style */
+
+
+html *
+{
+    color: black;
+}
+
+header
+{
+    background-color: #e6e6fa;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(230,230,250,1) 75%);
+    text-align: center;
+}
+
+/* id's */
+#about-me
+{
+    margin-top: 1rem;
+    font-size:  1.5em;
+}
+
+#body-upper
+{
+    padding-top: 2rem;
+    background-color: #ffb6c1;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,182,193,0.4) 50%, rgba(255,255,255,1) 100%);
+}
+
+#body-lower
+{
+    background-color: #add8e6;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(173,216,230,0.4) 50%);
+}
+
+
+/* Classes */
+.center-img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+
+
+/* Left Column */
+.left-col
+{
+    margin-left: 1rem;
+}
+
+/* right Column */
+.center-col
+{
+    margin-left: 1rem;
+}
+.center-col h2
+{
+    text-align: center;
+}
+
+.center-col img
+{
+    margin-top: 1rem;
+    max-width: 300px;
+}
+
+
+/* Grid Setup */
+/* @import "../../../../homework1.css"; */
+
+/* Grid layout for the 2 column + header and footer layout */
+
+/* Creating references to what classes are what to the grid */
+.gridHeader { grid-area: header; }
+.gridMenu { grid-area: menu; }
+.gridMain { grid-area: main; }
+.gridFooter { grid-area: footer; }
+
+/* The base layout for the grid */
+.gridLayout
+{
+    /* CSS Variable declarations for the grid*/
+    --grid-Ends-BG-Color: lightblue;
+    --grid-Body-BG-Color: white;
+    --grid-Ends-Font-Color: blue;
+    --grid-Body-Font-Color: maroon;
+
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+    min-width: 860px;
+}
+
+/* Layout to anything that are immediate children to gridLayout */
+.gridLayout > div
+{
+    padding: 20px;
+}
+
+.gridLayout > .gridEnds
+{
+    color: var(--grid-Ends-Font-Color);
+    background-color: var(--grid-Ends-BG-Color); /* Default background color */
+}
+
+.gridLayout > .gridBody
+{
+    color: var(--grid-Body-Font-Color);
+    background-color: var(--grid-Body-BG-Color);
+}
+
+.gridLayout > .gridHeader
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.gridLayout > .gridMenu > ul
+{
+    list-style: none;
+}
+
+.gridLayout > .gridMenu
+{
+    width: 200px;
+}
