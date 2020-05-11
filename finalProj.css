@@ -1,7 +1,6 @@
 
 /* Page Style */
 
-
 html *
 {
     color: black;
@@ -31,7 +30,8 @@ header
 #body-lower
 {
     background-color: #add8e6;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(173,216,230,0.4) 50%);
+    /* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(173,216,230,0.4) 50%); */
+    background: linear-gradient(0deg,rgba(230,230,250,1) 0%, rgba(255,255,255,1) 75% );
 }
 
 
@@ -105,11 +105,13 @@ header
     padding: 20px;
 }
 
+/*
 .gridLayout > .gridEnds
 {
     color: var(--grid-Ends-Font-Color);
-    background-color: var(--grid-Ends-BG-Color); /* Default background color */
+    background-color: var(--grid-Ends-BG-Color); /* Default background color 
 }
+*/
 
 .gridLayout > .gridBody
 {
@@ -121,6 +123,11 @@ header
 {
     font-size: 1.5em;
     text-align: center;
+}
+
+.gridLayout > .gridFooter
+{
+    padding-left: 1em;
 }
 
 .gridLayout > .gridMenu > ul
